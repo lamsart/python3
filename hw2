@@ -1,0 +1,9 @@
+import random
+mas = []
+result = []
+N = 10
+result = [0 for i in range(N//2)]
+mas = [random.randint(1,100) for i in range(N)]
+for i in range(N//2):
+    result[i] = mas[i]*mas[N-i-1]
+print(result)
